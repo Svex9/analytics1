@@ -214,6 +214,17 @@ table(students$grades)
 barplot(table(students$grades))
 
 
+students
+write.csv(students,'./data/iimtrichy.csv')   #to export into csv
+students2= read.csv('./data/iimtrichy.csv')
+head(students2)
+students3= read.csv(file.choose())    #to import from csv
+head(students3)
+
+
+
+
+
 
 
 #with the help of hash we can bookmark our code and can navigate easily
