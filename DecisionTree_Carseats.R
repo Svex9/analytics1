@@ -28,7 +28,7 @@ rpart.plot(prunetree, nn=T, cex=.8, type=4)
 nrow(data)
 
 (testdata=sample_n(data,2))
-#predict(prunetree, ndata=testdata, type=)
+predict(prunetree, ndata=testdata,type='vector')
 
 #https://www.datacamp.com/community/tutorials/decision-trees-R
 

@@ -27,5 +27,6 @@ nrow(data)
 library(dplyr)
 (testdata = sample_n(data,2))
 predict(prunetree2, newdata=testdata, type='class')
+predict(prunetree2, newdata=testdata, type='prob')
 
 ??sample_n
